@@ -4,7 +4,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Yi Sheng Tay';
+const name = 'ystay.org';
 export const siteTitle = 'ystay.org';
 
 export default function Layout({ children, home }) {
@@ -30,8 +30,8 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
+              src="/images/woodcuts2.jpg"
+              className={utilStyles.bgImage}
               height={144}
               width={144}
               alt=""

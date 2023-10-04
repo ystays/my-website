@@ -21,20 +21,10 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Hi.
-          I'm a 2023 Computer Science graduate from UCLA.]</p>
-        <p>
-          (This is my personal website. Check out {' '}
-          <a href="https://linkedin.com/in/yi-sheng-tay">my LinkedIn page</a>.)
-        </p>
-        <small>
-          Senior Computer Science major at UCLA, with an interest in backend development, AI and digital humanities. Previously interned at Intel and Keysight, and has lately been exploring building web apps with the MEAN stack. 
-          <br/>
-          Searching for a new grad SWE role. Looking for stimulating, collaborative work with a supportive team.
-        </small>
+        <p>Welcome to ystay.org!</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        {/* <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -46,7 +36,12 @@ export default function Home({ allPostsData }) {
           </li>          
           ))
           }
-        </ul>
+        </ul> */}
+        <br/>
+        <hr></hr>
+        <br />
+        <Link className={utilStyles.headingLg} href={`/about`}>About</Link>
+      
       </section>
     </Layout>
   );
